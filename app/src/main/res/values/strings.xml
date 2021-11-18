@@ -13,4 +13,12 @@
     <string name="mobile_number" translatable="false">+917461007133</string>
 
 
+    //** Language Change Options
+    <string name="english" translatable="false">ENGLISH</string>
+    <string name="hindi" translatable="false">हिंदी</string>
+
+    <string name="english_locale" translatable="false">en</string>
+    <string name="hindi_locale" translatable="false">hi</string>
+
+
 </resources>
