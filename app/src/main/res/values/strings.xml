@@ -1,0 +1,11 @@
+<resources>
+    //* CHANGEABLE
+    <string name="service_view_name">Services</string>
+
+
+    //* NON CHANGEABLE
+    <string name="app_name" translatable="false">mtelecom</string>
+    <string name="mobile_number" translatable="false">+917461007133</string>
+
+
+</resources>
