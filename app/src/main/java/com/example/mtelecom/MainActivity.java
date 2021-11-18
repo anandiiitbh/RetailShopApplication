@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
         hideSystemUI();
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         LANGUAGE_CONTEXT = LocaleHelper.getLocaleContext(this);
 

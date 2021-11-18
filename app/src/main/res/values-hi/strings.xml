@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    //* CHANGEABLE
     <string name="service_view_name">सेवाएँ</string>
+
+    //** Menu Options
+    <string name="menu_option_about_us">हमारे बारे में</string>
+    <string name="menu_option_contact_us">संपर्क करें</string>
+    <string name="menu_option_locate_me">हमें ढूंढें</string>
+    <string name="menu_option_change_language">भाषा बदलें</string>
 </resources>

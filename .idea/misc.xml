@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/anand/AndroidStudioProjects/mtelecom/app/src/main/res/drawable/ic_outline_contact_phone_24.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/anand/AndroidStudioProjects/mtelecom/app/src/main/res/drawable/ic_outline_info_24.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/anand/AndroidStudioProjects/mtelecom/app/src/main/res/drawable/ic_outline_my_location_24.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/anand/AndroidStudioProjects/mtelecom/app/src/main/res/drawable/ic_outline_translate_24.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/anand/AndroidStudioProjects/mtelecom/app/src/main/res/layout/activity_main.xml" value="0.12708333333333333" />
         <entry key="..\:/Users/anand/AndroidStudioProjects/mtelecom/app/src/main/res/layout/activity_service_logic.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/anand/AndroidStudioProjects/mtelecom/app/src/main/res/menu/main_menu.xml" value="0.25" />

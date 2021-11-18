@@ -8,7 +8,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.ImageSpan;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -31,28 +35,44 @@ public class ServicesActivity extends AppCompatActivity {
         sendWhatsappMsg(getString(R.string.mobile_number),"hi",this);
     }
 
+    private CharSequence menuIconWithText(Drawable r, String title) {
+
+        r.setBounds(0, 0, r.getIntrinsicWidth(), r.getIntrinsicHeight());
+        SpannableString sb = new SpannableString("    " + title);
+        ImageSpan imageSpan = new ImageSpan(r, ImageSpan.ALIGN_BOTTOM);
+        sb.setSpan(imageSpan, 0, 1, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+        return sb;
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        menu.add(0, 1, 1, menuIconWithText(getResources().getDrawable(R.drawable.ic_outline_info_24), LANGUAGE_CONTEXT.getString(R.string.menu_option_about_us)));
+        menu.add(0, 2, 2, menuIconWithText(getResources().getDrawable(R.drawable.ic_outline_contact_phone_24), LANGUAGE_CONTEXT.getString(R.string.menu_option_contact_us)));
+        menu.add(0, 3, 3, menuIconWithText(getResources().getDrawable(R.drawable.ic_outline_my_location_24), LANGUAGE_CONTEXT.getString(R.string.menu_option_locate_me)));
+        menu.add(0, 4, 4, menuIconWithText(getResources().getDrawable(R.drawable.ic_outline_translate_24), LANGUAGE_CONTEXT.getString(R.string.menu_option_change_language)));
         return true;
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        switch (id){
-            case R.id.item1:
-                Toast.makeText(getApplicationContext(),"Item 1 Selected",Toast.LENGTH_LONG).show();
+        switch (item.getItemId()) {
+            case 1:
+                Toast.makeText(ServicesActivity.this, "Profile is Clicked", Toast.LENGTH_SHORT).show();
                 return true;
-            case R.id.item2:
-                Toast.makeText(getApplicationContext(),"Item 2 Selected",Toast.LENGTH_LONG).show();
+            case 2:
+                Toast.makeText(ServicesActivity.this, "Add New User is Clicked", Toast.LENGTH_SHORT).show();
                 return true;
-            case R.id.item3:
-                Toast.makeText(getApplicationContext(),"Item 3 Selected",Toast.LENGTH_LONG).show();
+            case 3:
+                Toast.makeText(ServicesActivity.this, "Switch Profile is Clicked", Toast.LENGTH_SHORT).show();
                 return true;
-            default:
-                return super.onOptionsItemSelected(item);
+            case 4:
+                Toast.makeText(ServicesActivity.this, "Sign Out is Clicked", Toast.LENGTH_SHORT).show();
+                return true;
         }
+
+        return super.onOptionsItemSelected(item);
     }
 }

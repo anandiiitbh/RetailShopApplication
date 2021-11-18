@@ -2,6 +2,11 @@
     //* CHANGEABLE
     <string name="service_view_name">Services</string>
 
+    //** Menu Options
+    <string name="menu_option_about_us">About Us</string>
+    <string name="menu_option_contact_us">Contact Us</string>
+    <string name="menu_option_locate_me">Locate Us</string>
+    <string name="menu_option_change_language">Change Language</string>
 
     //* NON CHANGEABLE
     <string name="app_name" translatable="false">mtelecom</string>
