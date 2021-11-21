@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "2910195469",
+    "project_id": "mtelecom",
+    "storage_bucket": "mtelecom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2910195469:android:cbd9d3545f6f5ab6946a44",
+        "android_client_info": {
+          "package_name": "com.example.mtelecom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2910195469-fe874l5vu3cplsm7m9bfbmedmkkp0oj8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mtelecom",
+            "certificate_hash": "18a4456e546586beb4bd00e919dbaa2af4f5cf00"
+          }
+        },
+        {
+          "client_id": "2910195469-2kl6a3vf8u9462cb8vit8a2c29irjkvg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwBClNl42EOf7pYmXHPokmM07ByjP4_nU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "2910195469-2kl6a3vf8u9462cb8vit8a2c29irjkvg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

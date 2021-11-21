@@ -1,6 +1,10 @@
 <resources>
     //* CHANGEABLE
     <string name="service_view_name">Services</string>
+    <string name="title_activity_locate_us">Locate Us</string>
+    <string name="or">or</string>
+    <string name="send">send</string>
+    <string name="name">NAME</string>
 
     //** Menu Options
     <string name="menu_option_about_us">About Us</string>
@@ -8,9 +12,11 @@
     <string name="menu_option_locate_me">Locate Us</string>
     <string name="menu_option_change_language">Change Language</string>
 
+
     //* NON CHANGEABLE
     <string name="app_name" translatable="false">mtelecom</string>
     <string name="mobile_number" translatable="false">+917461007133</string>
+    <string name="mail_id" translatable="false">mteecom.ramganj@gmail.com</string>
 
 
     //** Language Change Options
@@ -19,6 +25,7 @@
 
     <string name="english_locale" translatable="false">en</string>
     <string name="hindi_locale" translatable="false">hi</string>
+    <string name="gotoLocation">Visit Shop</string>
 
 
 </resources>

@@ -6,9 +6,7 @@ import static com.example.mtelecom.helper.Constants.sendWhatsappMsg;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.Spannable;
@@ -33,9 +31,6 @@ public class ServicesActivity extends AppCompatActivity {
         getSupportActionBar().setTitle(LANGUAGE_CONTEXT.getString(R.string.service_view_name));
     }
 
-    public void pressedf(View view) {
-        sendWhatsappMsg(getString(R.string.mobile_number),"hi",this);
-    }
 
     private CharSequence menuIconWithText(Drawable r, String title) {
 
@@ -53,9 +48,7 @@ public class ServicesActivity extends AppCompatActivity {
         menu.add(0, 2, 2, menuIconWithText(getDrawable(R.drawable.ic_outline_contact_phone_24), LANGUAGE_CONTEXT.getString(R.string.menu_option_contact_us)));
         menu.add(0, 3, 3, menuIconWithText(getDrawable(R.drawable.ic_outline_my_location_24), LANGUAGE_CONTEXT.getString(R.string.menu_option_locate_me)));
 
-
         SubMenu languageMenu = menu.addSubMenu(0, 4, 4, menuIconWithText(getDrawable(R.drawable.ic_outline_translate_24), LANGUAGE_CONTEXT.getString(R.string.menu_option_change_language)));
-
         languageMenu.clear();
         languageMenu.add(0, 5, Menu.NONE, getString(R.string.hindi));
         languageMenu.add(0, 6, Menu.NONE, getString(R.string.english));
@@ -67,25 +60,32 @@ public class ServicesActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        Intent intent   =   new Intent(ServicesActivity.this,
-                MainActivity.class);
+        Intent intent = null;
 
         switch (item.getItemId()) {
             case 1:
                 Toast.makeText(ServicesActivity.this, LANGUAGE_CONTEXT.getString(R.string.menu_option_about_us), Toast.LENGTH_SHORT).show();
                 return true;
             case 2:
-                Toast.makeText(ServicesActivity.this, LANGUAGE_CONTEXT.getString(R.string.menu_option_contact_us), Toast.LENGTH_SHORT).show();
+                intent = new Intent(ServicesActivity.this,
+                        ContactUs.class);
+                startActivity(intent);
                 return true;
             case 3:
-                Toast.makeText(ServicesActivity.this, LANGUAGE_CONTEXT.getString(R.string.menu_option_locate_me), Toast.LENGTH_SHORT).show();
+                intent = new Intent(ServicesActivity.this,
+                        LocateUs.class);
+                startActivity(intent);
                 return true;
             case 5:
+                intent = new Intent(ServicesActivity.this,
+                    MainActivity.class);
                 LocaleHelper.setLocale(ServicesActivity.this,getString(R.string.hindi_locale));
                 startActivity(intent);
                 finish();
                 return true;
             case 6:
+                intent = new Intent(ServicesActivity.this,
+                        MainActivity.class);
                 LocaleHelper.setLocale(ServicesActivity.this,getString(R.string.english_locale));
                 startActivity(intent);
                 finish();

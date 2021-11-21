@@ -2,10 +2,15 @@
 <resources>
     //* CHANGEABLE
     <string name="service_view_name">सेवाएँ</string>
+    <string name="title_activity_locate_us">हमारा पता</string>
+    <string name="or">या फिर</string>
+    <string name="send">भेजें</string>
+    <string name="name">नाम</string>
 
     //** Menu Options
     <string name="menu_option_about_us">हमारे बारे में</string>
     <string name="menu_option_contact_us">संपर्क करें</string>
     <string name="menu_option_locate_me">हमें ढूंढें</string>
     <string name="menu_option_change_language">भाषा बदलें</string>
+    <string name="gotoLocation">दुकान पर जाएँ</string>
 </resources>
